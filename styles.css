@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Young+Serif&display=swap');
+
+
+:root{
+--Nutmeg: hsl(14, 45%, 36%);
+--Dark_Raspberry: hsl(332, 51%, 32%);
+
+--White: hsl(0, 0%, 100%);
+--Rose_White: hsl(330, 100%, 98%);
+--Eggshell: hsl(30, 54%, 90%);
+--Light_Grey: hsl(30, 18%, 87%);
+--Wenge_Brown: hsl(30, 10%, 34%);
+--Dark_Charcoal: hsl(24, 5%, 18%);
+}
+
+@font-face {
+    font-family: Young Serif;
+    src: url(./assets/fonts/young-serif/YoungSerif-Regular.ttf);
+
+}
+@font-face {
+    font-family: Outfit;
+    src: url(./assets/fonts/outfit/Outfit-VariableFont_wght.ttf);
+}
+
+*{
+    margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+}
+
+
+body{
+    width: 50%;
+    background-color: var(--Eggshell);
+    margin: auto;
+    padding: 50px 0;
+}
+img{
+    width: 100%;
+    border-radius: 8px;
+}
+
+.container{
+    background-color: var(--White);
+    padding: 30px;
+    border-radius: 20px;
+    margin-bottom: 20px;
+    font-family: Outfit;
+    font-weight: lighter;
+}
+
+.recipe h1{
+    font-family: 'Young Serif', serif;
+    margin-top: 15px;
+    margin-bottom: 15px;
+
+}
+.recipe h2{
+    font-family: 'Young Serif', serif;
+    color: var(--Nutmeg);
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+.recipe p {
+    margin-top:10px;
+    margin-bottom:20px;
+}
+.recipe .prep_time{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background-color: var(--Rose_White);
+    padding: 30px;
+}
+.prep_time p{
+    color: var(--Dark_Raspberry);
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+span{
+    font-weight: bold;
+}
+
+li{
+    padding: 5px;
+    color: var(--Wenge_Brown);
+}
+.ingredients{
+    padding: 10px;
+}
+.instructions{
+    padding: 15px;
+}
+table{
+    width: 100%;
+}
+table td{
+    padding: 2px;
+    border-top: 1px solid black;
+}
+.nutrition p{
+    color: var(--Wenge_Brown)
+}
+.nutrition table{
+    color: var(--Wenge_Brown)
+}
+
+@media (min-width:740) {
+    .container{
+        width: 100%;
+    }
+}
